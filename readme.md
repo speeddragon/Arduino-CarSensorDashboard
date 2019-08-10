@@ -8,9 +8,19 @@ This repository contains C/C++ code to read and display (via Bluetooth) car sens
 
 ## Diagram
 
-The layout of the components can be seen here: https://circuits.io/circuits/2527463-car-sensor-controller/
+Sender Diagram
 
-A more detail diagram with all connections, including bluetooth and MPX4250AP will be added latter.
+![Circuit diagram](/diagram.png)
+
+This is just a simple voltage divider circuit with a 0.1 uF capacitor to help stabilize the signal.
+
+10K Ohms is used in both senders.
+
+On the water temperature sender, I used 4.7 k ohms.
+On the oil temperature sender, I used 330 ohms.
+On the oil pressure sender, I used 100 ohms.
+
+This values can change to match the sender resistor range for the values you want more precision.
 
 ## Sensors
 
